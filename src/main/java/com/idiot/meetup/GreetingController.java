@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
     @GetMapping("/api/greeting")
-    public String greeting(String name) {
-        return "Hello " + name;
+    public String greeting(String name, int age) {
+        return String.format("Hello %s. You are %d years old", name, age);
     }
 
 }
