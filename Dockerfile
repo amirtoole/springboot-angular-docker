@@ -1,6 +1,6 @@
 FROM alpine/git as git
 WORKDIR /app
-RUN git clone https://github.com/hellofornow/springboot-angular-docker.git
+RUN git clone https://github.com/hellofornow/springboot-angular-docker.git${branch}
 
 
 FROM node:8.4.0-slim as clientbuilder
